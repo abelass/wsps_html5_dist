@@ -1,0 +1,22 @@
+<paquet
+	prefix="bootstrap3_dist"
+	categorie="squelette"
+	version="1.0.2"
+	etat="test"
+	compatibilite="[3.0.0;3.2.*]"
+	logo="img/spipr_dist-32.png"
+	documentation="http://spipr.nursit.com/"
+>
+
+	<nom>Bootstrap 3 dist</nom>
+
+	<auteur>Rainer Müller</auteur>
+	<auteur lien='https://websimple.be'>Web Simple</auteur>
+
+	<necessite nom="Zcore" compatibilite="[2.5.0;[" />
+	<necessite nom="scssphp" compatibilite="[1.3.3;[" />
+	<necessite nom="comments" compatibilite="[3.3.2;[" />
+	<necessite nom="bootstrap3_sass" compatibilite="[1.0.0;[" />
+
+	<utilise nom="albums" compatibilite="[1.0.0;[" />
+</paquet>
