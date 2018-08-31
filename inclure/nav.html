@@ -1,1 +1,4 @@
-<INCLURE{fond=inclure/nav-secteurs,env} />
+[(#PLUGIN{menus}|?{
+	#INCLURE{fond=inclure/menu, env, identifiant=barrenav},
+	#INCLURE{fond=inclure/nav-secteurs,env}
+})]

@@ -5,8 +5,8 @@ et sans préjuger d'une quelconque structure définie par le theme :
 header	fournit la présentation de la page et d'identité
 nav constitue la navigation principale du site - peut être vide
 content	contient l'information principale de la page
-aside	fournit des élements de navigation secondaire
-extra fournit des eléments d'information connexes
+extra1	fournit des élements de navigation secondaire
+extra2 fournit des eléments d'information connexes
 footer	fournit des éléments de repérages et de rappels secondaires
 
 
@@ -53,9 +53,9 @@ content
 		.surtitre
 		.soustitre
 		.traductions
-		.publication	Infos de publication
-			.pubdate	date de publication
-			.authors	auteur de publication, avec seperateurs .sep eventuels
+		.info-publi	Infos de publication
+			.published	date de publication
+			.auteurs	auteur de publication, avec seperateurs .sep eventuels
 			.past-published	date de publication anterieure
 
 	.postmeta cartouche de présentation des réactions
@@ -84,7 +84,7 @@ content
 		garder la structure de la dist ?
 
 
-aside
+extra1
 
 Peut contenir
 - une navigation de second niveau, structurée comme nav, par .menu-liste, .menu-entree, .sep et a
@@ -94,7 +94,7 @@ des intertitres .hx
 des listes d'items
 ...
 
-extra
+extra2
 ...
 
 
@@ -110,7 +110,7 @@ footer
 Elements généraux
 
 les intertitrages
-	.h1-like, .h2-like, .h3-like, .h4-like, .h5-like, .h6-like
+	.h1, .h2, .h3, .h4, .h5, .h6
 la pagination
 	.pagination contient a, .on et .separateur
 

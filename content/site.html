@@ -1,22 +1,20 @@
 <BOUCLE_content(SITES){id_syndic}>
-<section>
+[(#REM) Fil d'Ariane ]
+<nav id="hierarchie"><a href="#URL_SITE_SPIP/"><:accueil_site:></a><BOUCLE_ariane(HIERARCHIE){id_syndic}><span class="sep"> &gt; </span><a href="#URL_RUBRIQUE">[(#TITRE|couper{80})]</a></BOUCLE_ariane>[<span class="sep"> &gt; </span><strong class="on">(#NOM_SITE|couper{80})</strong>]</nav>
+
+<article class="content-principal">
 
   <header class="cartouche">
-
-      <h1 class="#EDIT{nom_site}">[<a href="#URL_SITE">(#LOGO_SITE|image_reduire)</a>]#NOM_SITE</h1>
+      <a href="#URL_SITE">[(#LOGO_SITE|image_reduire{150,100})]</a>
+      <h1 class="h1 #EDIT{nom_site}">#NOM_SITE</h1>
   </header>
 
-	<div class="main">
-		[<div class="#EDIT{descriptif} chapo">(#DESCRIPTIF)</div>]
-		[<p class="#EDIT{url_site} hyperlien"><a href="#URL_SITE" class="spip_out">(#URL_SITE|couper{80})</a></p>]
-	</div>
+  [<section class="#EDIT{descriptif} chapo">(#DESCRIPTIF)</section>]
+  [<section class="#EDIT{url_site} hyperlien"><a href="#URL_SITE" class="spip_out">(#URL_SITE|couper{80})</a></section>]
+</article>
 
-	<aside>
-		<INCLURE{fond=liste/syndicarticles,id_syndic,env,ajax} />
-	</aside>
+<INCLURE{fond=liste/syndicarticles,id_syndic,env,ajax} />
 
-	<footer>
-		[<div class="notes"><hr />(#NOTES)</div>]
-	</footer>
-</section>
+
+[<section class="notes"><hr />(#NOTES)</section>]
 </BOUCLE_content>
