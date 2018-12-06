@@ -1,7 +1,7 @@
 <paquet
 	prefix="wsps_html5_dist"
 	categorie="squelette"
-	version="1.0.0"
+	version="1.0.1"
 	etat="test"
 	compatibilite="[3.0.0;3.2.*]"
 	logo="img/spipr_dist-32.png"
@@ -14,6 +14,7 @@
 	<auteur lien='https://websimple.be'>Web Simple</auteur>
 
 	<necessite nom="Zcore" compatibilite="[2.5.0;[" />
+	<necessite nom="scssphp" compatibilite="[1.4.9;]" />
 
 	<utilise nom="albums" compatibilite="[1.0.0;[" />
 </paquet>
