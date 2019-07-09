@@ -4,14 +4,27 @@
 	padding-right: 10px;
 }
 
+.js-responsivenav .nav-collapse {
+	overflow: visible;
+}
+
 
 @media (max-width: 767px) {
 	#nav {
-		padding-right: 10px;
+		position: relative;
 	}
 
+	#nav .navbar{
+		position: absolute;
+		right: 10px;
+		top: 0;
+		background-color: #e5e5e5;
+		padding: 5px;
+		max-width: 500px;
+	}
 
 	#nav ul li {
 		text-align: right;
+		width: auto
 	}
 }
