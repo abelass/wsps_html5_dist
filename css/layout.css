@@ -27,7 +27,8 @@ body {
 
 .grid {
 	display: grid;
-	grid-template-columns: 200px auto 200px;
+	grid-template-columns: 200px 1fr 200px;
+	grid-template-areas: "column-1 column-2 column-3";
 	grid-gap: 1em;
 	position: relative;
 }
@@ -41,6 +42,7 @@ header#header, footer, #nav {
 	margin: 0;
 	border-bottom: 2px solid #46839B;
 }
+
 
 .extra1 {
 	margin-bottom:/*@margin-bottom*/1.5em/*/@*/;
@@ -77,14 +79,30 @@ header#header, footer, #nav {
 		grid-gap: 0;
 		padding: 0 0.5em;
 	}
-header#header, footer, #nav {
-		grid-column: 1;
+	header#header, footer, #nav {
+			grid-column: 1;
+		}
+
+	#content {
+		order: 1;
 	}
-  #extra1,
-  #extra2,
-  #content {
-    grid-column: 1 / 4;
-  }
+
+	.extra1 {
+		order: 2;
+	}
+
+	.extra1 {
+		order: 3;
+	}
+
+	#footer {
+		order: 4
+	}
+	#extra1,
+	#extra2,
+	#content {
+		grid-column: 1 / 4;
+	}
 }
 
 @media all and (min-width: 768px) {
