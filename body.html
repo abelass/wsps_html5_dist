@@ -1,8 +1,8 @@
 <body>
 	<section class="page grid">
 		<header id="header"><INCLURE{fond=header/#ENV{type-page},env} /></header>
-		[<nav class="navbar navbar-inverse navbar-responsive" id="nav">
-				(#INCLURE{fond=inclure/nav,env}|navbar_responsive)
+		[<nav class="nav" id="nav">
+				(#INCLURE{fond=inclure/nav,env})
 		</nav>]
 		<aside class="extra1 col" id="extra1"><INCLURE{fond=extra1/#ENV{type-page},env} /></aside>
 		<article class="content" id="content"><INCLURE{fond=content/#ENV{type-page},env} /></article>

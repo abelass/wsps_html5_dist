@@ -1,0 +1,17 @@
+.nav-toggle {
+	grid-column: 1;
+	justify-self: end;
+	padding-right: 10px;
+}
+
+
+@media (max-width: 767px) {
+	#nav {
+		padding-right: 10px;
+	}
+
+
+	#nav ul li {
+		text-align: right;
+	}
+}
