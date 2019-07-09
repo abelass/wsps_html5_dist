@@ -15,6 +15,7 @@
 
 	<necessite nom="Zcore" compatibilite="[2.5.0;[" />
 	<necessite nom="scssphp" compatibilite="[1.4.9;]" />
+	<necessite nom="responsivenav" compatibilite="[0.1.11;]" />
 
 	<utilise nom="albums" compatibilite="[1.0.0;[" />
 </paquet>
