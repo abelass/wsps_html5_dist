@@ -1,3 +1,5 @@
+@import 'css/variables';
+
 /*
  * HTML5 Boilerplate
  *
@@ -25,8 +27,8 @@ b, u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
@@ -36,7 +38,7 @@ time, mark, audio, video {
 	font: inherit;
 	vertical-align: baseline;
 }
- 
+
 
 /* =============================================================================
    HTML5 display definitions
@@ -61,7 +63,11 @@ html { font-size: 100%; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 10
 
 html, button, input, select, textarea { font-family: sans-serif; color: #222; }
 
-body { margin: 0; font-size: 1em; line-height: 1.4; }
+body {
+	margin: 0;
+	font-size: 1em;
+	line-height: 1.4;
+}
 
 /*
  * Remove text-shadow in selection highlight: h5bp.com/i
@@ -77,9 +83,16 @@ body { margin: 0; font-size: 1em; line-height: 1.4; }
    Links
    ========================================================================== */
 
-a { color: #00e; }
-a:visited { color: #551a8b; }
-a:hover { color: #06e; }
+a {
+	color: $link-color;
+	text-decoration: $link-hover-decoration;
+}
+
+a:visited {
+	color: #551a8b;
+}
+
+a:hover { color: $link-hover-color; }
 a:focus { outline: thin dotted; }
 
 /* Improve readability when focused and hovered in all browsers: h5bp.com/h */
@@ -242,7 +255,7 @@ td { vertical-align: top; }
 
 
 /* ==|== primary styles =====================================================
-   Author: 
+   Author:
    ========================================================================== */
 
 /* Ca à priori, pas toucher (readapter au besoin) */
@@ -323,7 +336,7 @@ td { vertical-align: top; }
 	/* plan du site */
 	ul.plan {margin-bottom: /*@margin-bottom*/1.5em/*/@*/;}
 	ul.plan li {margin-left: /*@text-indent*/50px/*/@*/;list-style-type: disc;}
-	
+
 	/* spip.petition.css */
 	#signatures { }
 	#signatures caption h2 { margin: 0; }
@@ -331,7 +344,7 @@ td { vertical-align: top; }
 	#signatures td.signature-nom small { display: block; }
 	#signatures .formulaire_recherche {  } /*Cf.: spip_formulaires.css*/
 	#signatures .formulaire_recherche input.text {  } /*Cf.: spip_formulaires.css*/
-	
+
 	/* spip.pagination.css */
 	.pagination .sep,.pagination .label {display:none;}
 	.pagination {padding:10px 0 10px 0;text-align:center;}
@@ -339,16 +352,16 @@ td { vertical-align: top; }
 	.pagination .lien_pagination:hover, .pagination .lien_pagination:active {border:2px solid #444;}
 	.pagination .on {padding:2px 5px; margin:0 2px; border:2px solid #222; color:#fff; font-weight:bold; background-color:#999;}
 	.pagination .disabled {display:none;}
-	.col .pagination .prev,.col .pagination .next {display: none;}	
-	
+	.col .pagination .prev,.col .pagination .next {display: none;}
+
 	/* spip.portfolio.css */
 	.documents_portfolio { clear: both; margin: /*@margin-bottom*/1.5em/*/@*/ auto; text-align: center; }
 	.documents_portfolio .spip_logos { float: none; margin: 6px 3px 0 3px; border: 4px solid #DDD; }
 	.documents_portfolio a.on .spip_logos { border-color: #222; }
 	.documents_portfolio a:focus .spip_logos,
 	.documents_portfolio a:hover .spip_logos,
-	.documents_portfolio a:active .spip_logos { border-color: #444; }	
-	
+	.documents_portfolio a:active .spip_logos { border-color: #444; }
+
 	/* clear.css */
 	/* Blocs */
 	.bloc { display: block; margin-bottom: /*@margin-bottom*/1.5em/*/@*/; }
@@ -376,9 +389,9 @@ td { vertical-align: top; }
 	/* clearfix : http://www.positioniseverything.net/easyclearing.html */
 	.clearfix:after {
 			content: "\0020";
-			display: block; 
-			height: 0; 
-			clear: both; 
+			display: block;
+			height: 0;
+			clear: both;
 			visibility: hidden;
 			overflow: hidden;
 	}
@@ -397,7 +410,7 @@ td { vertical-align: top; }
 	/* debug */
 	.todo { opacity: 0.5; }
 	.todo:hover { opacity: 1; }
-	
+
 	/* grid.css */
 	.line, .lastUnit {overflow: hidden;_overflow:visible;_zoom:1; }
 	.unit{float:left;_zoom:1;}
@@ -414,22 +427,40 @@ td { vertical-align: top; }
 	.size4of5{width:80%;}
 	.lastUnit {float:none;_position:relative; _left:-3px; _margin-right: -3px;width:auto;}
 	/* extending grids to allow a unit that takes the width of its content */
-	.media{width:auto;}	
-	
+	.media{width:auto;}
+
 	/* button.css - check varicelle.css */
 
 	/* layout.css */
-	body { background: #f9f9f9; margin: 0; padding: 0; text-align: center; }
-	.page { position: relative; background: #fff; width: 58em; margin: 1em auto; padding:1em 2em; text-align: left; border:3px solid #ddd; }
+	body {
+		margin: 0;
+		padding: 0;
+		text-align: center;
+	}
+	.page {
+		position: relative;
+		background: #fff;
+		width: $container-desktop;
+		margin: 1em auto;
+		padding:1em 2em;
+		text-align: left;
+		border:3px solid #ddd;
+	}
 	.header { width: 100%; margin: 0; border-bottom: 2px solid #46839B; }
 	.container { clear: both; overflow: hidden; margin-top:/*@margin-bottom*/1.5em/*/@*/; }
-	.content { float:left; width:65%;}
-	.extra1 { float: right; width: 30%; overflow: hidden; margin-bottom:/*@margin-bottom*/1.5em/*/@*/; }
-	.extra2 { float: right; clear:right; width: 30%; overflow: hidden; margin-bottom:/*@margin-bottom*/1.5em/*/@*/; }
-	.footer { clear: both; width: 100%; margin: 1em 0 0 0; padding: 0.60em 0; border: 2px solid #ddd; background:#f9f9f9; text-align: center; font-size: 0.90em; }
+	.content {}
+	.extra1 {
+		overflow: hidden;
+		margin-bottom:/*@margin-bottom*/1.5em/*/@*/; }
+	.extra2 {
+		overflow: hidden; margin-bottom:/*@margin-bottom*/1.5em/*/@*/;
+	}
+	.footer {
+		width: 100%;
+		margin: 1em 0 0 0; padding: 0.60em 0; border: 2px solid #ddd; background:#f9f9f9; text-align: center; font-size: 0.90em; }
 	.footer a { /*color:#666;*/ } /* ne pas utiliser de selecteur trop precis, et eviter de toucher aux liens */
 	.footer img { vertical-align: middle; }
-	
+
 	/* theme.css */
 	/* Titraille / Intertitres */
 	h1,h2,h3,h4,h5,h6,
@@ -456,11 +487,6 @@ td { vertical-align: top; }
 	.header .accueil #nom_site_spip { vertical-align: bottom; font-size: 2.2em; font-family: Georgia, Times, serif; font-weight: normal; }
 	.header .formulaire_menu_lang { position: absolute; right: 0; top: 0.90em; display: block; width: 30%; } /*Cf.: spip_formulaires.css*/
 	.header .formulaire_menu_lang select {width: 100%;}
-
-	.hornav {background-color: #ebeeee;}
-	.hornav .item a:hover {background:#dadddd}
-	.hornav .on {color:#000;}
-	.hornav .on a {color:#000;}
 
 
 	#hierarchie { clear: both; margin-bottom: /*@margin-bottom*/1.5em/*/@*/; font-size: 0.846em; }
@@ -513,6 +539,14 @@ td { vertical-align: top; }
    This example overrides the primary ('mobile first') styles
    Modify as content requires.
    ========================================================================== */
+
+@media (max-width: 767px) {
+	.page{
+		margin: 0;
+		padding: 1em;
+		width: auto;
+	}
+}
 
 @media only screen and (min-width: 35em) {
   /* Style adjustments for viewports that meet the condition */

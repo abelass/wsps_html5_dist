@@ -1,3 +1,5 @@
+@import 'css/variables';
+
 /* --------------------------------------------------------------
 
    typo.css.html
@@ -6,54 +8,65 @@
 
 -------------------------------------------------------------- */
 
-.valeurs_de_base {
-font-size:/*@font-size*/0.8125em/*/@*/;
-font-family:/*@font-family*/"Luxi sans", "Lucida Grande", Lucida, "Lucida Sans Unicode", sans-serif/*/@*/;
-font-family:/*@font-family-mono*/'andale mono','lucida console',monospace/*/@*/;
-text-indent:/*@text-indent*/50px/*/@*/;
-line-height:/*@line-height*/1.5em/*/@*/;
-line-height:/*@demi-line-height*/0.75em/*/@*/;
-margin-bottom:/*@margin-bottom*/1.5em/*/@*/;
-margin-bottom:/*@demi-margin-bottom*/0.75em/*/@*/;
-color:/*@color*/#333/*/@*/;
-background-color:/*@background-color*/#FFFFFF/*/@*/;
-}
 
 html { font-size: 100.01%; } /* Cf.: http://www.pompage.net/pompe/definir-des-tailles-de-polices-en-CSS/ */
-body { background: /*@background-color*/#FFFFFF/*/@*/; font: /*@font-size*/0.8125em/*/@*///*@line-height*/1.5em/*/@*/ /*@font-family*/"Luxi sans", "Lucida Grande", Lucida, "Lucida Sans Unicode", sans-serif/*/@*/; color: /*@color*/#333/*/@*/; }
+body {
+	background: $body-bg;
+	font: $font-size-base $line-height-base $font-family-base;
+	color: $text-color; }
 
 /* Titraille / Intertitres */
 h1,h2,h3,h4,h5,h6,
-.h1,.h2,.h3,.h4,.h5,.h6 { margin: 0; padding: 0; font-size: 100%; font-weight: normal; }
-hr { height: 1px; margin:/*@margin-bottom*/1.5em/*/@*/ 0; border: 0; background: /*@color*/#333/*/@*/; color: /*@color*/#333/*/@*/; }
+.h1,.h2,.h3,.h4,.h5,.h6 {
+	margin: 0;
+	padding: 0;
+	font-family: $headings-font-family;
+	color: $headings-color;
+	line-height: $headings-line-height;
+	font-family: $headings-font-family;
+}
 
-/* Titraille Blueprint
-Cf. : http://www.blueprintcss.org/tests/parts/elements.html
-h1 { font-size: 3em; line-height: 1; margin-bottom: 0.5em; }
-h2 { font-size: 2em; margin-bottom: 0.75em; }
-h3 { font-size: 1.5em; line-height: 1; margin-bottom: 1em; }
-h4 { font-size: 1.2em; line-height: 1.25; margin-bottom: 1.25em; }
-h5 { font-size: 1em; font-weight: bold; margin-bottom: 1.5em; }
-h6 { font-size: 1em; font-weight: bold; }*/
+h1, .h1 {
+	font-size: $font-size-h1;
+	margin-bottom: 0.75em;
+}
 
-h1,.h1 {font-size: 2em; line-height:/*@line-height*/1.5em/*/@*/;margin-bottom: /*@demi-margin-bottom*/0.75em/*/@*/; }
-/*
-#SET{coeff,#GET{line-height}|plus{2}|div{2}|div{#GET{line-height}}}
-#SET{coeffinv,#VAL{1}|div{#GET{coeff}}}
-h2,.h2 {[ font-size: (#GET{line-height}|mult{#GET{coeff}})em];[ line-height: (#GET{coeffinv}|mult{2})em];[ margin-bottom: (#GET{coeffinv})em;]}
-*/
-h2,.h2 { font-size: 1.75em; line-height: 1.71428em; margin-bottom: 0.857em;}
 
-h3,.h3 { font-size: /*@line-height*/1.5em/*/@*/; line-height: 1; margin-bottom: 1em; font-weight: bold;}
-/*
-#SET{coeff,#GET{line-height}|plus{1}|div{2}|div{#GET{line-height}}}
-#SET{coeffinv,#VAL{1}|div{#GET{coeff}}}
-h4,.h4 {[ font-size: (#GET{line-height}|mult{#GET{coeff}})em];[ line-height: (#GET{coeffinv})em];[ margin-bottom: (#GET{coeffinv})em;]font-weight: bold; }
-*/
-h4,.h4 { font-size: 1.25em; line-height: 1.2em; margin-bottom: 1.2em;font-weight: bold; }
+h2,.h2 {
+	font-size: $font-size-h2;
+	line-height: 1.71428em;
+	margin-bottom: 0.857em;
+}
+
+
+h3,.h3 {
+	font-size: $font-size-h3;
+	line-height: 1;
+	margin-bottom: 1em;
+}
+
+
+h4,.h4 {
+	font-size: $font-size-h4;
+	line-height: 1.2em;
+	margin-bottom: 1.2em;
+	font-weight: bold; }
 
 h5,.h5 { font-size: 1em; font-weight: bold; margin-bottom: /*@margin-bottom*/1.5em/*/@*/; }
 h6,.h6 { font-size: 1em; font-weight: bold; }
+
+h5 {
+	font-size: $font-size-h5;
+}
+
+h6 {
+	font-size: $font-size-h6;
+}
+
+hr { height: 1px; margin:/*@margin-bottom*/1.5em/*/@*/ 0; border: 0; background: /*@color*/#333/*/@*/; color: /*@color*/#333/*/@*/; }
+
+
+
 
 /* Enrichissements typographiques */
 strong, b { font-weight: bold; }
