@@ -66,7 +66,7 @@
 		max-width: 500px;
 		height: auto;
 		text-align: right;
-		z-index: 200;
+		z-index: $zindex-navbar;
 		a {
 			padding: 0 10px;
 			line-height: normal;
