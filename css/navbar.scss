@@ -52,15 +52,25 @@
 	#nav {
 		position: relative;
 	}
-
-	.nav-collapse ul li.nav-item {
-		display: block;
+	.nav-toggle {
+		position: absolute;
+		right: 5px;
+		top: 5px;
+		width: 50px;
 	}
 
+	.nav-collapse {
+		margin-bottom: 0;
+		ul li.nav-item {
+			display: block;
+		}
+	}
+
+
 	#nav .navbar{
-		position: absolute;
-		right: 0;
-		top: 0;
+		position: fixed;
+		right: 5px;
+		top: 40px;
 		background-color: $navbar-default-bg;
 		padding: 5px;
 		max-width: 500px;
