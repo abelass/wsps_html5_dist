@@ -65,13 +65,4 @@ table.spip tr.row_even td,table.spip tr.row_even th {background: #eee;}
 .formulaire_recherche input.text {width: 170px;}
 
 
-/* Couleurs des liens
----------------------------------------------- */
-a { color: #3996BB; text-decoration: none; }
-a:focus,a:hover,a:active { color: #46839B; text-decoration: underline; }
-a.spip_out, a.spip_glossaire {
-	color: #46839B;
-	background:transparent url(img/spip_out.gif) no-repeat scroll right center;
-	padding-right:12px;
-}
 
