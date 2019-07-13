@@ -12,7 +12,7 @@
 html { font-size: 100.01%; } /* Cf.: http://www.pompage.net/pompe/definir-des-tailles-de-polices-en-CSS/ */
 body {
 	background: $body-bg;
-	font: $font-size-base $line-height-base $font-family-base;
+	font: $font-size-base/$line-height-computed $font-family-base;
 	color: $text-color; }
 
 /* Titraille / Intertitres */
@@ -20,10 +20,10 @@ h1,h2,h3,h4,h5,h6,
 .h1,.h2,.h3,.h4,.h5,.h6 {
 	margin: 0;
 	padding: 0;
-	font-family: $headings-font-family;
+	font: 100% $headings-font-family;
 	color: $headings-color;
 	line-height: $headings-line-height;
-	font-family: $headings-font-family;
+
 }
 
 h1, .h1 {

@@ -1,10 +1,3 @@
-/* Titraille / Intertitres */
-h1,h2,h3,h4,h5,h6,
-.h1,.h2,.h3,.h4,.h5,.h6 { font-family: Georgia, Times, serif; }
-h1,.h1 { color: #000; }
-h2, h2 a, h2 a:focus, h2 a:hover, h2 a:active { color: #222; }
-.h2, .h2 a, .h2 a:focus, .h2 a:hover, .h2 a:active { color: #222; }
-
 /* Citations, code et poesie */
 .spip_code {color:#777;}
 .spip_cadre {color:#777; background-color: #fff; border: 1px solid #ddd; }
