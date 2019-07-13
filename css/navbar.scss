@@ -34,16 +34,16 @@
 		padding: $nav-link-padding;
 		display: block;
 	}
-	a:hover {
-		color: $navbar-default-link-hover-color;
-		background-color: $navbar-default-link-hover-bg;
-	}
 	a:active {
 		color: $navbar-default-link-active-color;
 		background-color: $navbar-default-link-active-bg;
 	}
 	a:visited,  {
 		color: $navbar-default-link-color;
+	}
+	a:hover {
+		color: $navbar-default-link-hover-color;
+		background-color: $navbar-default-link-hover-bg;
 	}
 }
 
