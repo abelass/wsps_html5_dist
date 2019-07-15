@@ -1,6 +1,3 @@
-[(#REM) Fil d'Ariane ]
-<nav id="hierarchie"><a href="#URL_SITE_SPIP/"><:accueil_site:></a><span class="sep"> &gt; </span><strong class="on"><:plan_site:></strong></nav>
-
 <article class="content-principal">
 	<header class="cartouche">
 		<h1 class="h1"><:plan_site:></h1>
@@ -25,7 +22,7 @@
 		<BOUCLE_rubriques(RUBRIQUES) {id_parent} {par titre}>
 		<li>
 			<strong><a href="#URL_RUBRIQUE">#TITRE</a></strong>
-			
+
 			<B_articles>
 			<ul>
 				<BOUCLE_articles(ARTICLES) {id_rubrique} {par titre}>
@@ -33,7 +30,7 @@
 				</BOUCLE_articles>
 			</ul>
 			</B_articles>
-			
+
 			<BOUCLE_sous_rubriques(BOUCLE_rubriques)></BOUCLE_sous_rubriques>
 		</li>
 		</BOUCLE_rubriques>
