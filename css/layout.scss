@@ -27,7 +27,7 @@
 	grid-gap: $grid-gap;
 }
 
-header#header, footer, #nav {
+header#header, .breadcrumb, footer, #nav {
 	grid-column: 1 / 4;
 }
 

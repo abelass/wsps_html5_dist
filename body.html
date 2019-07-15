@@ -4,9 +4,16 @@
 		[<nav class="nav" id="nav">
 				(#INCLURE{fond=inclure/nav,env})
 		</nav>]
-		<aside class="extra1 col" id="extra1"><INCLURE{fond=extra1/#ENV{type-page},env} /></aside>
-		<article class="content" id="content"><INCLURE{fond=content/#ENV{type-page},env} /></article>
-		<aside class="extra2 col" id="extra2"><INCLURE{fond=extra2/#ENV{type-page},env} /></aside>
+		<INCLURE{fond=breadcrumb/#ENV{type-page},env} />
+		<aside class="extra1 col" id="extra1">
+			<INCLURE{fond=extra1/#ENV{type-page},env} />
+		</aside>
+		<div class="content" id="content">
+			<INCLURE{fond=content/#ENV{type-page},env} />
+		</div>
+		<aside class="extra2 col" id="extra2">
+			<INCLURE{fond=extra2/#ENV{type-page},env} />
+		</aside>
 		<footer id="footer"><INCLURE{fond=footer/#ENV{type-page},env} /></footer>
 	</section>
 </body>
