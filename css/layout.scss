@@ -23,6 +23,9 @@
 
 .grid {
 	display: grid;
+}
+
+.page.grid{
 	grid-template-columns: $grid-template-columns;
 	grid-gap: $grid-gap;
 }
