@@ -490,6 +490,9 @@ table.spip tr.row_even td,table.spip tr.row_even th {background: #eee;}
 
 .chapo { margin-bottom: /*@margin-bottom*/1.5em/*/@*/; font-weight:bold; color:#666;}
 .chapo .spip_cadre {color:#888;}
+.main {
+	margin-bottom: 1em;
+}
 .ps, .notes { margin-bottom: /*@margin-bottom*/1.5em/*/@*/;}
 .notes { clear: both; font-size: 0.846em; }
 
@@ -519,6 +522,13 @@ table.spip tr.row_even td,table.spip tr.row_even th {background: #eee;}
 /* Menus des traductions */
 .traductions.menu-items {
 	border-bottom: none;
+}
+
+/* Autres éléments */
+.flex {
+	display: flex;
+	flex-flow: row;
+	flex-wrap: wrap;
 }
 
 
