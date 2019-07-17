@@ -25,7 +25,7 @@ if (!defined('_ECRIRE_INC_VERSION')) {
 
 function wsps_html5_dist_recuperer_fond($flux){
 
-	// Ajoute le bout de code pour le menu respionsive
+	// Ajoute le markup pour ouvrir le menu responsive.
 	if ($flux['args']['fond'] == 'inclure/nav'){
 		$menu_repsonsive  = recuperer_fond('inclure/menu_responsive');
 		$flux['data']['texte'] = preg_replace('|<ul>|', $menu_repsonsive . '<ul id="nav-menu">', $flux['data']['texte'], 1);
