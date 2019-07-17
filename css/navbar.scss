@@ -9,7 +9,7 @@
 }
 
 /* menu responsive, merci à https://medialoot.com/blog/how-to-create-a-responsive-navigation-menu-using-only-css */
-.nav {
+#nav {
 	.navbar {
 		position: relative;
 		margin-bottom: 2em;
@@ -24,6 +24,7 @@
 
 	/*Style for menu links*/
 	li {
+		float: left;
 		display:inline-block;
 		margin-right: 1px;
 		a {
@@ -55,10 +56,10 @@
 	}
 	/*Style for dropdown links*/
 	li:hover ul a {
-			background: $navbar-default-link-hover-bg;;
-			color: $navbar-default-link-hover-color;
-			//height: $navbar-height-link-dropdown;
-			line-height: $navbar-line-height-link-dropdown;
+		background: $navbar-default-link-hover-bg;;
+		color: $navbar-default-link-hover-color;
+		//height: $navbar-height-link-dropdown;
+		line-height: $navbar-line-height-link-dropdown;
 	}
 	/*Hover state for dropdown links*/
 	li:hover ul a:hover {
@@ -69,12 +70,12 @@
 
 	/*Hide dropdown links until they are needed*/
 	li ul {
-			display: none;
+		display: none;
 	}
 	/*Make dropdown links vertical*/
 	li ul li {
-			display: block;
-			float: none;
+		display: block;
+		float: none;
 	}
 	/*Prevent text wrapping*/
 	li ul li a {
@@ -87,43 +88,39 @@
 			display: block;
 	}
 	/*Style 'show menu' label button and hide it by default*/
+
+	/* Hamburger menu, merci à https://uicookies.com/hamburger-menu-css/ */
 	.show-menu {
+		float: right;
+		right: 0;
+		margin: 1em 0 0 1em;
+		top: 5px;
+		width: 36px;
+		transform: translate(0,-50%);
 		color: $navbar-default-toggle-color;
 		background: $navbar-default-toggle-icon-bar-bg;
 		display: none;
 	}
 
-/* Hamburger menu, merci à https://uicookies.com/hamburger-menu-css/ */
-.show-menu {
-	float: right;
-	right: 0;
-	margin: 1em 0 0 1em;
-	top: 5px;
-	width: 36px;
-	transform: translate(0,-50%);
-	display: none;
-}
-
-.show-menu:before,
-.show-menu:after {
-	background-color: $navbar-default-toggle-color;
-	content: '';
-	display: block;
-	height: 4px;
-	transition: all 200ms ease-in-out;
-}
-.show-menu:before {
-	box-shadow: 0 10px 0 $navbar-default-toggle-color;
-	margin-bottom: 16px;
-}
-.show-menu:hover:before {
-	box-shadow: 0 0 0 $navbar-default-toggle-color;
-	transform: translateY(10px) rotate(45deg);
-}
-.show-menu:hover:after{
-	transform: translateY(-10px) rotate(-45deg);
-}
-
+	.show-menu:before,
+	.show-menu:after {
+		background-color: $navbar-default-toggle-color;
+		content: '';
+		display: block;
+		height: 4px;
+		transition: all 200ms ease-in-out;
+	}
+	.show-menu:before {
+		box-shadow: 0 10px 0 $navbar-default-toggle-color;
+		margin-bottom: 16px;
+	}
+	.show-menu:hover:before {
+		box-shadow: 0 0 0 $navbar-default-toggle-color;
+		transform: translateY(10px) rotate(45deg);
+	}
+	.show-menu:hover:after{
+		transform: translateY(-10px) rotate(-45deg);
+	}
 
 	/*Hide checkbox*/
 	input#show-menu[type=checkbox]{
@@ -138,33 +135,37 @@
 /*Responsive Styles*/
 @media screen and (max-width : 800px){
 	/*Make dropdown links appear inline*/
-	.navbar {
-		ul {
-			display: none;
-			position: absolute;
-			right: 0;
-			top: 35px;
-			background-color: #fff;
-		}
-		/*Create vertical spacing*/
-		li {
-			margin-bottom: 1px;
-			a {
-				padding: 0.2em 0;
-				border: none;
-				border-radius: 0;
+	#nav {
+		.navbar {
+			margin: 0;
+			ul {
+				display: none;
+				position: absolute;
+				right: 0;
+				top: 35px;
+				background-color: #fff;
 			}
-		}
-		/*Make all menu links full width*/
-		ul li, li a {
-				width: 100%;
+			/*Create vertical spacing*/
+			li {
+				margin-bottom: 1px;
+				a {
+					padding: 0.2em 0;
+					border: none;
+					border-radius: 0;
+				}
+			}
+			/*Make all menu links full width*/
+			ul li, li a {
+					width: 100%;
+			}
 		}
 		/*Display 'show menu' link*/
 		.show-menu {
-				display:block;
+			display: block;
 		}
 	}
 }
+
 
 
 /*Create a horizontal list with spacing*/
