@@ -13,81 +13,81 @@
 	.navbar {
 		position: relative;
 		margin-bottom: 2em;
-	}
-
 	ul {
-		list-style-type:none;
-		margin:0;
-		padding:0;
-		position: absolute;
-	}
+			list-style-type:none;
+			margin:0;
+			padding:0;
+			position: absolute;
+		}
 
-	/*Style for menu links*/
-	li {
-		float: left;
-		display:inline-block;
-		margin-right: 1px;
-		a {
-			border : 1px solid $navbar-default-border;
-			border-radius: $navbar-border-radius;
-			display:block;
-			text-align: center;
-			line-height: $navbar-line-height-link;
-			font-family: $navbar-font-family;
-			color: $navbar-default-link-color;
-			background: $navbar-default-bg;
-			padding: $nav-link-padding;
-			text-decoration: none;
+		/*Style for menu links*/
+		li {
+			float: left;
+			display:inline-block;
+			margin-right: 1px;
+			a {
+				border : 1px solid $navbar-default-border;
+				border-radius: $navbar-border-radius;
+				display:block;
+				text-align: center;
+				line-height: $navbar-line-height-link;
+				font-family: $navbar-font-family;
+				color: $navbar-default-link-color;
+				background: $navbar-default-bg;
+				padding: $nav-link-padding;
+				text-decoration: none;
 			}
-		a:active {
-			color: $navbar-default-link-active-color;
+			a:active {
+				color: $navbar-default-link-active-color;
+			}
+			a:visited, {
+				color: $navbar-default-link-color;
+			}
+			a:hover {
+				color: $navbar-default-link-color;
+			}
 		}
-		a:visited, {
-			color: $navbar-default-link-color;
-		}
-		a:hover {
-			color: $navbar-default-link-color;
-		}
-	}
 
-	/*Hover state for top level links*/
-	li:hover a {
-			background: $navbar-default-link-hover-bg;
-	}
-	/*Style for dropdown links*/
-	li:hover ul a {
-		background: $navbar-default-link-hover-bg;;
-		color: $navbar-default-link-hover-color;
-		//height: $navbar-height-link-dropdown;
-		line-height: $navbar-line-height-link-dropdown;
-	}
-	/*Hover state for dropdown links*/
-	li:hover ul a:hover {
-			background: $navbar-default-link-hover-bg;
+		/*Hover state for top level links*/
+		li:hover a {
+				background: $navbar-default-link-hover-bg;
+		}
+		/*Style for dropdown links*/
+		li:hover ul a {
+			background: $navbar-default-link-hover-bg;;
 			color: $navbar-default-link-hover-color;
-	}
+			//height: $navbar-height-link-dropdown;
+			line-height: $navbar-line-height-link-dropdown;
+		}
+		/*Hover state for dropdown links*/
+		li:hover ul a:hover {
+				background: $navbar-default-link-hover-bg;
+				color: $navbar-default-link-hover-color;
+		}
 
 
-	/*Hide dropdown links until they are needed*/
-	li ul {
-		display: none;
-	}
-	/*Make dropdown links vertical*/
-	li ul li {
-		display: block;
-		float: none;
-	}
-	/*Prevent text wrapping*/
-	li ul li a {
-			width: auto;
-			padding: $navbar-padding-vertical-link-dropdown;
-	}
-
-	/*Display the dropdown on hover*/
-	ul li a:hover + .hidden, .hidden:hover {
+		/*Hide dropdown links until they are needed*/
+		li ul {
+			display: none;
+		}
+		/*Make dropdown links vertical*/
+		li ul li {
 			display: block;
+			float: none;
+		}
+		/*Prevent text wrapping*/
+		li ul li a {
+				width: auto;
+				padding: $navbar-padding-vertical-link-dropdown;
+		}
+
+		/*Display the dropdown on hover*/
+		ul li a:hover + .hidden, .hidden:hover {
+				display: block;
+		}
+		/*Style 'show menu' label button and hide it by default*/
+
 	}
-	/*Style 'show menu' label button and hide it by default*/
 
 	/* Hamburger menu, merci à https://uicookies.com/hamburger-menu-css/ */
 	.show-menu {
