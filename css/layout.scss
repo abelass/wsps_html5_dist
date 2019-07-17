@@ -13,12 +13,12 @@
 
 .page {
 	position: relative;
-	background: #fff;
 	text-align: left;
-	border:3px
-	solid #ddd;
 	overflow: hidden;
-
+	margin: 1em auto;
+	background: #fff;
+	width: $container-large-desktop;
+	border:3px solid #ddd;
 }
 
 .grid {
@@ -101,9 +101,18 @@ header#header, .breadcrumb, footer, #nav {
 	}
 }
 
-@media all and (min-width: 768px) {
+@media all and (min-width: 801px) {
 	.page {
 		padding:1em 1em;
+	}
+	#nav {
+		order: -1;
+	}
+}
+
+@media all and (max-width: 800px) {
+	#nav {
+		order: -1;
 	}
 }
 

@@ -413,15 +413,7 @@ body {
 	padding: 0;
 	text-align: center;
 }
-.page {
-	position: relative;
-	background: #fff;
-	width: $container-large-desktop;
-	margin: 1em auto;
-	padding:1em 2em;
-	text-align: left;
-	border:3px solid #ddd;
-}
+
 .header { width: 100%; margin: 0; border-bottom: 2px solid #46839B; }
 .container { clear: both; overflow: hidden; margin-top:/*@margin-bottom*/1.5em/*/@*/; }
 .content {}
@@ -539,13 +531,7 @@ table.spip tr.row_even td,table.spip tr.row_even th {background: #eee;}
 	 Modify as content requires.
 	 ========================================================================== */
 
-@media (max-width: 1169px) {
-	.page{
-		margin: 0;
-		padding: 1em;
-		width: auto;
-	}
-}
+
 
 @media (max-width: 800px) {
 	.traductions a[hreflang]::after {
@@ -561,6 +547,9 @@ table.spip tr.row_even td,table.spip tr.row_even th {background: #eee;}
 }
 
 @media (max-width: 800px) {
+	.page {
+		padding-top: 0;
+	}
 	.traductions a[hreflang]::after {
 		content: none;
 	}

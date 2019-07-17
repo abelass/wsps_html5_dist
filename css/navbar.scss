@@ -11,7 +11,7 @@
 /* menu responsive, merci à https://medialoot.com/blog/how-to-create-a-responsive-navigation-menu-using-only-css */
 .nav {
 	.navbar {
-		margin-bottom: 1em;
+		margin-bottom: 2em;
 	}
 
 	ul {
@@ -20,15 +20,13 @@
 		padding:0;
 		position: absolute;
 	}
-	/*Create a horizontal list with spacing*/
-	li {
-			display:inline-block;
-			float: left;
-			margin-right: 1px;
-	}
+
 	/*Style for menu links*/
 	li {
+		display:inline-block;
+		margin-right: 1px;
 		a {
+			border : 1px solid $navbar-default-border;
 			border-radius: $navbar-border-radius;
 			display:block;
 			//height: $navbar-height-link;
@@ -111,9 +109,9 @@
 }
 
 /*Responsive Styles*/
-@media screen and (max-width : 760px){
-		/*Make dropdown links appear inline*/
-		.navbar {
+@media screen and (max-width : 800px){
+	/*Make dropdown links appear inline*/
+	.navbar {
 			ul {
 				position: static;
 				display: none;
@@ -130,7 +128,7 @@
 		.show-menu {
 				display:block;
 		}
-		}
+	}
 
 }
 
