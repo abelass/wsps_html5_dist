@@ -1,5 +1,16 @@
 <?php
+/**
+ * Utilisations de pipelines par Websimple dist
+ *
+ * @plugin     Websimple dist
+ * @copyright  2018 - 2019
+ * @author     Rainer Müller
+ * @licence    GNU/GPL v3
+ * @package    SPIP\Veraschmid\Pipelines
+ */
 
-if (!defined('_ECRIRE_INC_VERSION')) return;
+if (!defined('_ECRIRE_INC_VERSION')) {
+	return;
+}
 
-//define('_RESPONSIVENAV_OPENPOS', 'absolute');
+

@@ -16,6 +16,8 @@
 	<necessite nom="Zcore" compatibilite="[2.5.0;[" />
 	<necessite nom="scssphp" compatibilite="[1.4.9;]" />
 
+	<pipeline nom="recuperer_fond" inclure="wsps_html5_dist_pipelines.php" />
+
 
 	<utilise nom="albums" compatibilite="[1.0.0;[" />
 </paquet>
