@@ -11,6 +11,7 @@
 /* menu responsive, merci à https://medialoot.com/blog/how-to-create-a-responsive-navigation-menu-using-only-css */
 .nav {
 	.navbar {
+		position: relative;
 		margin-bottom: 2em;
 	}
 
@@ -29,7 +30,6 @@
 			border : 1px solid $navbar-default-border;
 			border-radius: $navbar-border-radius;
 			display:block;
-			//height: $navbar-height-link;
 			text-align: center;
 			line-height: $navbar-line-height-link;
 			font-family: $navbar-font-family;
@@ -88,22 +88,49 @@
 	}
 	/*Style 'show menu' label button and hide it by default*/
 	.show-menu {
-		text-align: right;
-		text-decoration: none;
 		color: $navbar-default-toggle-color;
 		background: $navbar-default-toggle-icon-bar-bg;
-		text-align: center;
-		padding: 10px 0;
 		display: none;
 	}
 
+/* Hamburger menu, merci à https://uicookies.com/hamburger-menu-css/ */
+.show-menu {
+	float: right;
+	right: 0;
+	margin: 1em 0 0 1em;
+	top: 5px;
+	width: 36px;
+	transform: translate(0,-50%);
+	display: none;
+}
+
+.show-menu:before,
+.show-menu:after {
+	background-color: $navbar-default-toggle-color;
+	content: '';
+	display: block;
+	height: 4px;
+	transition: all 200ms ease-in-out;
+}
+.show-menu:before {
+	box-shadow: 0 10px 0 $navbar-default-toggle-color;
+	margin-bottom: 16px;
+}
+.show-menu:hover:before {
+	box-shadow: 0 0 0 $navbar-default-toggle-color;
+	transform: translateY(10px) rotate(45deg);
+}
+.show-menu:hover:after{
+	transform: translateY(-10px) rotate(-45deg);
+}
+
 
 	/*Hide checkbox*/
-	input[type=checkbox]{
-			display: none;
+	input#show-menu[type=checkbox]{
+			visibility: hidden;
 	}
 	/*Show menu when invisible checkbox is checked*/
-	input[type=checkbox]:checked ~ #nav-menu{
+	input#show-menu[type=checkbox]:checked ~ #nav-menu{
 			display: block;
 	}
 }
@@ -113,8 +140,11 @@
 	/*Make dropdown links appear inline*/
 	.navbar {
 		ul {
-				position: static;
-				display: none;
+			display: none;
+			position: absolute;
+			right: 0;
+			top: 35px;
+			background-color: #fff;
 		}
 		/*Create vertical spacing*/
 		li {
@@ -134,7 +164,6 @@
 				display:block;
 		}
 	}
-
 }
 
 
