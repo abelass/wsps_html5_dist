@@ -88,13 +88,13 @@
 	}
 	/*Style 'show menu' label button and hide it by default*/
 	.show-menu {
-			font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-			text-decoration: none;
-			color: $navbar-default-toggle-color;
-			background: $navbar-default-toggle-icon-bar-bg;
-			text-align: center;
-			padding: 10px 0;
-			display: none;
+		text-align: right;
+		text-decoration: none;
+		color: $navbar-default-toggle-color;
+		background: $navbar-default-toggle-icon-bar-bg;
+		text-align: center;
+		padding: 10px 0;
+		display: none;
 	}
 
 
@@ -112,13 +112,18 @@
 @media screen and (max-width : 800px){
 	/*Make dropdown links appear inline*/
 	.navbar {
-			ul {
+		ul {
 				position: static;
 				display: none;
 		}
 		/*Create vertical spacing*/
 		li {
-				margin-bottom: 1px;
+			margin-bottom: 1px;
+			a {
+				padding: 0.2em 0;
+				border: none;
+				border-radius: 0;
+			}
 		}
 		/*Make all menu links full width*/
 		ul li, li a {
