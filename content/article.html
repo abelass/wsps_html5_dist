@@ -9,6 +9,32 @@
 		<p class="info-publi"><abbr class="published" title="[(#DATE|date_iso)]">[(#DATE|nom_jour) ][(#DATE|affdate)]</abbr>[<span class="sep">, </span><span class="auteurs"><:par_auteur:> (#LESAUTEURS)</span>]</p>
 		[(#REM) Inclure le modele des liens de traductions ]
 		#MODELE{article_traductions}
+		<div class="postmeta">
+			<BOUCLE_nb_commentaires(FORUMS) {id_article}{plat} />
+			[(#TOTAL_BOUCLE|oui) <span class="comments"> <span class="sep">|</span>
+				<a [ href="(#REM|ancre_url{comments})"
+				] [title="(#TOTAL_BOUCLE|singulier_ou_pluriel{zcore:info_1_commentaire,zcore:info_nb_commentaires}|attribut_html)"]>[<i
+					class="icon-comment"></i> (#TOTAL_BOUCLE)]
+			</a>
+			</span> ]
+			<//B_nb_commentaires>
+			<BOUCLE_combien(SIGNATURES) {id_article}{plat} />
+			[(#TOTAL_BOUCLE|oui) <span class="signatures"> <span
+				class="sep">|</span> <a [ href="(#REM|ancre_url{petition})"
+				] [title="(#TOTAL_BOUCLE|singulier_ou_pluriel{zcore:info_1_signature,zcore:info_nb_signatures}|attribut_html)"]>[<i
+					class="icon-ok-circle"></i> (#TOTAL_BOUCLE)]
+			</a>
+			</span> ]
+			<//B_combien>
+			<B_tags> <span class="tags"> <span class="sep">|</span>
+				<ul class="inline">
+					<BOUCLE_tags(MOTS){id_article}>
+					<li><a class="label" href="#URL_MOT"><i class="icon-tag"></i>
+							#TITRE</a></li>
+					</BOUCLE_tags>
+				</ul>
+			</span> </B_tags>
+		</div>
 	</header>
 
 	[<section class="#EDIT{chapo} chapo surlignable">(#CHAPO|image_reduire{500,0})</section>]
