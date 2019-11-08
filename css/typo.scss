@@ -13,7 +13,8 @@ html { font-size: 100.01%; } /* Cf.: http://www.pompage.net/pompe/definir-des-ta
 body {
 	background: $body-bg;
 	font: $font-size-base/$line-height-computed $font-family-base;
-	color: $text-color; }
+	color: $text-color;
+}
 
 /* Titraille / Intertitres */
 h1,h2,h3,h4,h5,h6,
@@ -23,7 +24,6 @@ h1,h2,h3,h4,h5,h6,
 	font: 100% $headings-font-family;
 	color: $headings-color;
 	line-height: $headings-line-height;
-
 }
 
 h1, .h1 {
@@ -31,20 +31,17 @@ h1, .h1 {
 	margin-bottom: 0.75em;
 }
 
-
 h2,.h2 {
 	font-size: $font-size-h2;
 	line-height: 1.71428em;
 	margin-bottom: 0.857em;
 }
 
-
 h3,.h3 {
 	font-size: $font-size-h3;
 	line-height: 1;
 	margin-bottom: 1em;
 }
-
 
 h4,.h4 {
 	font-size: $font-size-h4;
@@ -64,9 +61,6 @@ h6 {
 }
 
 hr { height: 1px; margin:/*@margin-bottom*/1.5em/*/@*/ 0; border: 0; background: /*@color*/#333/*/@*/; color: /*@color*/#333/*/@*/; }
-
-
-
 
 /* Enrichissements typographiques */
 strong, b { font-weight: bold; }
