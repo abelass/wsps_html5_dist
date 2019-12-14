@@ -21,16 +21,16 @@ Author URI: http://www.mis-algoritmos.com
 }
 
 .pagination .lien_pagination:hover, .pagination .lien_pagination:active {
-	border:2px solid #444;
+	border:2px solid $pagination-active-color;
 }
 
 .pagination .on {
 	padding:2px 5px;
 	margin:0 2px;
-	border:2px solid #222;
-	color:#fff;
+	border:2px solid $pagination-active-border;
+	color: $pagination-active-color;
 	font-weight:bold;
-	background-color:#999;
+	background-color: $pagination-active-bg;
 }
 .pagination .disabled {
 	display:none;
