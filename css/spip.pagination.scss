@@ -10,30 +10,26 @@ Author URI: http://www.mis-algoritmos.com
 .pagination {
 	padding:10px 0 10px 0;
 	text-align:center;
+	.lien_pagination {
+		padding:2px 5px;
+		margin:0 2px;
+		text-decoration:none;
+		border:2px solid $pagination-border;
+		color: $pagination-color
+	}
+	.lien_pagination:hover, .pagination .lien_pagination:active {
+		border:2px solid $pagination-active-color;
+	}
+	.on {
+		padding:2px 5px;
+		margin:0 2px;
+		border:2px solid $pagination-active-border;
+		color: $pagination-active-color;
+		font-weight:bold;
+		background-color: $pagination-active-bg;
+	}
+	.disabled {
+		display:none;
+	}
 }
-
-.pagination .lien_pagination {
-	padding:2px 5px;
-	margin:0 2px;
-	text-decoration:none;
-	border:2px solid $pagination-border;
-	color: $pagination-color
-}
-
-.pagination .lien_pagination:hover, .pagination .lien_pagination:active {
-	border:2px solid $pagination-active-color;
-}
-
-.pagination .on {
-	padding:2px 5px;
-	margin:0 2px;
-	border:2px solid $pagination-active-border;
-	color: $pagination-active-color;
-	font-weight:bold;
-	background-color: $pagination-active-bg;
-}
-.pagination .disabled {
-	display:none;
-}
-
 .col .pagination .prev,.col .pagination .next {display: none;}
