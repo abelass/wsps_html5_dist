@@ -1,3 +1,4 @@
+@import 'css/variables';
 /*
 Plugin Name: WP-Digg Style Paginator
 Plugin URI: http://www.mis-algoritmos.com/2007/09/09/wp-digg-style-pagination-plugin-v-10/
@@ -15,7 +16,8 @@ Author URI: http://www.mis-algoritmos.com
 	padding:2px 5px;
 	margin:0 2px;
 	text-decoration:none;
-	border:2px solid #f0f0f0;
+	border:2px solid $pagination-border;
+	color: $pagination-color
 }
 
 .pagination .lien_pagination:hover, .pagination .lien_pagination:active {
@@ -24,11 +26,11 @@ Author URI: http://www.mis-algoritmos.com
 
 .pagination .on {
 	padding:2px 5px;
-    margin:0 2px;
-    border:2px solid #222;
-    color:#fff;
-    font-weight:bold;
-    background-color:#999;
+	margin:0 2px;
+	border:2px solid #222;
+	color:#fff;
+	font-weight:bold;
+	background-color:#999;
 }
 .pagination .disabled {
 	display:none;
