@@ -14,7 +14,15 @@ if (!defined('_ECRIRE_INC_VERSION')) {
 }
 
 if (!isset($GLOBALS['z_blocs']))
-	$GLOBALS['z_blocs'] = array('content','extra1','extra2','head','head_js','header','footer');
+	$GLOBALS['z_blocs'] = array(
+		'content',
+		'extra1',
+		'extra2'
+		,'head',
+		'head_js',
+		'header',
+		'footer',
+		'breadcrumb');
 
 define('_ZENGARDEN_FILTRE_THEMES','spipr');
 define('_ALBUMS_INSERT_HEAD_CSS',false);
