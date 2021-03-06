@@ -387,7 +387,7 @@ $navbar-default-link-disabled-color:       #ccc;
 $navbar-default-link-disabled-bg:          transparent;
 
 // Navbar links dropdown
-$navbar-height-link-dropdown :      ($navbar-height-link - 0.1em);
+$navbar-height-link-dropdown :      ($navbar-height-link - 0.1);
 $navbar-line-height-link-dropdown:  $navbar-height-link-dropdown;
 $navbar-padding-vertical-link-dropdown: 0 20px;
 
