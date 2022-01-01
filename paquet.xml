@@ -1,9 +1,9 @@
 <paquet
 	prefix="wsps_html5_dist"
 	categorie="squelette"
-	version="1.0.2"
+	version="1.0.3"
 	etat="test"
-	compatibilite="[3.0.0;3.2.*]"
+	compatibilite="[3.0.0;4.0.*]"
 	logo="img/spipr_dist-32.png"
 	documentation="https://github.com/abelass/wsps_html5_dist"
 >
@@ -11,7 +11,7 @@
 	<nom>Websimple dist</nom>
 
 	<auteur>Rainer Müller</auteur>
-	<auteur lien='https://websimple.be'>Web Simple</auteur>
+	<auteur lien='https://web-simple.eu'>Web Simple</auteur>
 
 	<necessite nom="Zcore" compatibilite="[2.5.0;[" />
 	<necessite nom="scssphp" compatibilite="[1.4.9;]" />
