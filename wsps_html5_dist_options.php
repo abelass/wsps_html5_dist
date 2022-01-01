@@ -1,9 +1,9 @@
 <?php
 /**
- * Utilisations de pipelines par Websimple dist
+ * Utilisations de pipelines par Web simple dist
  *
- * @plugin     Websimple dist
- * @copyright  2018 - 2019
+ * @plugin     Web simple dist
+ * @copyright  2018 - 2022
  * @author     Rainer Müller
  * @licence    GNU/GPL v3
  * @package    SPIP\Veraschmid\Pipelines

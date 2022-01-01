@@ -8,10 +8,10 @@
 	documentation="https://github.com/abelass/wsps_html5_dist"
 >
 
-	<nom>Websimple dist</nom>
+	<nom>Web simple dist</nom>
 
 	<auteur>Rainer Müller</auteur>
-	<auteur lien='https://websimple.be'>Web Simple</auteur>
+	<auteur lien='https://Web simple.be'>Web Simple</auteur>
 
 	<necessite nom="Zcore" compatibilite="[2.5.0;[" />
 	<necessite nom="scssphp" compatibilite="[1.4.9;]" />
