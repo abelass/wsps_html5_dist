@@ -1,9 +1,9 @@
 <paquet
 	prefix="wsps_html5_dist"
 	categorie="squelette"
-	version="2.1.1"
+	version="2.1.2"
 	etat="stable"
-	compatibilite="[3.0.0;3.3.*]"
+	compatibilite="[3.0.0;4.0.*]"
 	logo="img/spipr_dist-32.png"
 	documentation="https://github.com/abelass/wsps_html5_dist"
 >
